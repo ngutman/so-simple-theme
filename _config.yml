@@ -36,6 +36,8 @@ links:
     url: /about
   - title: Articles
     url: /articles
+  - title: Subscribe
+    url: /subscribe
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Jerusalem

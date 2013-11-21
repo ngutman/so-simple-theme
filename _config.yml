@@ -1,7 +1,7 @@
 title:            Guti's Blog
 description:      My blog about stuff
 logo:             site-logo.png
-disqus_shortname: ngutman.disqus.com
+disqus_shortname: ngutman
 search:           true
 #Change url to your domain. Leave localhost server or blank when working locally.
 url:              http://guti.in

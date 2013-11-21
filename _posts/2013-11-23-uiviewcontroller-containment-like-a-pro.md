@@ -16,9 +16,11 @@ Hey guys,
 
 I'm going to share with you a very annoying problem I had when implementing my cool custom view controller animated container.
 
-So basically what I wanted is to have a "tabbed navigation bar" that will animate the appearance / disappearance of a UIViewController when clicking on the tabs.
+So basically what I wanted to have is a "tabbed navigation bar" that will animate the appearance / disappearance of a UIViewController when clicking on the tabs.
 
-![What I want](/images/posts/view-controllers-like-pros/i1.png)
+<div style="text-align: center">
+<video width="320" height="568" controls><source src="/materials/videos/tabbedcontainer.mp4" type="video/mp4"></video>
+</div>
 
 I won't dig into the details of how I actually created the container view and implemented the animation but it's not very hard. The needed steps are to implement your own UIViewController and use addChildViewController to display the wanted view controller, like this -
 

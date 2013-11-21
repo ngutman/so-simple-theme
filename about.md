@@ -25,5 +25,11 @@ I'm available for any questions or remarks on the materials written here, don't 
 ## Other things I do
 * [Brew home made beer](http://geverbeer.com)
 * BitCoin!
+    * 1AKpJTJ6LK9wyvosvuURhBrSuvMx2t77NK
+    * Donations are highly appreciated :)
 * Photography (Nikon D7000 + couple of awesome lenses)
+    * _All the big pretty pictures in the blog are mine_
+    * [AF-S VR Micro-Nikkor 105mm f/2.8G IF-ED](http://www.nikonusa.com/en/Nikon-Products/Product/Camera-Lenses/2160/AF-S-VR-Micro-NIKKOR-105mm-f%252F2.8G-IF-ED.html)
+    * [AF Nikkor 50mm f/1.8D](http://www.nikonusa.com/en/Nikon-Products/Product/Camera-Lenses/2137/AF-Nikkor-50mm-f%252F1.8D.html)
+    * [SB-700 AF Speedlight](http://www.nikonusa.com/en/Nikon-Products/Product/Flashes/4808/SB-700-AF-Speedlight.html)
 

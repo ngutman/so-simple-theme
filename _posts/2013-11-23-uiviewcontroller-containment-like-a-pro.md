@@ -16,25 +16,30 @@ Hey guys,
 
 I'm going to share with you a very annoying problem I had when implementing my cool custom view controller animated container.
 
-So basically what I wanted to have is a "tabbed navigation bar" that will animate the appearance / disappearance of a UIViewController when clicking on the tabs.
+I wanted to create a "tabbed navigation bar" that will animate the appearance / disappearance of a `UIViewController` when clicking on the tabs[^1]. Something like this -
+
 
 <div style="text-align: center">
 <video width="320" height="568" controls><source src="/materials/videos/tabbedcontainer.mp4" type="video/mp4"></video>
 </div>
 
-I won't dig into the details of how I actually created the container view and implemented the animation but it's not very hard. The needed steps are to implement your own UIViewController and use addChildViewController to display the wanted view controller, like this -
+I won't dig into the details of how I actually created the container view and implemented the animation but it's not very hard (I'll probably post about it later). The required steps are to implement your own `UIViewController` and use `addChildViewController` to display the wanted view controller, like this -
 
 <script src="https://gist.github.com/ngutman/720db18bbd559eeef251.js"></script>
 
-After I ran this code everything seems to work for a while until we started experiencing weird bugs, the view controllers we contained were UITableViewControllers and after switching between tabs the internal UITableView frame got screwed and was larger than what it was supposed to be. This caused the UITableViewController to extend below the visible screen and to “overflow” -
+After executing this code everything seems to work, the container behaved and animated nicely but during the QA session we noticed that the contained view controllers were a bit broken.
+The two view controllers we used inherited from `UITableViewController` so they got a scrollable `UITableView`, we noticed that after one "cycle" of animation (switching between the tabs) the `UITableView` frame overflowed.
+
+This video will probably explain it better than I did -
 
 <div style="text-align: center">
 <video width="320" height="568" controls><source src="/materials/videos/overflow.mp4" type="video/mp4"></video>
 </div>
 
-My immediate thought was “what the hell am I doing wrong?” and I began my google journey of finding an answer to custom view controller containment failures. I can tell you that it’s very hard to find relevant information to weird iOS problems, especially when it’s so close to iOS7 release, sometime a weird behaviour is actually an iOS bug (but it’s rare :>).
+My immediate thought was “what the hell did I do wrong?” so I began my journey of finding an answer to custom view controller containment failures.
+I came upon some cool stackoverflow.com answers[^2] but nothing fixed the problem I had, I succumbed to a *quick and dirty* hack that included changing the UITableView frame on `viewWillAppear:` - this abomination introduced a different bug in another part of the application.
 
-The 2nd immediate thing I did was to scavenge the official iOS development guides and re-read everything about custom view controller containment, while reading through the "View Controller Programming Guide for iOS” I stumbled upon this code example showing the needed steps when adding a child view controller -
+After crying secretly for a bit I really wanted to nail this so I re-read Apple's guide about custom view-contoller containment[^1], and _vuala_ the answer smacked me in the face -
 
 <script src="https://gist.github.com/ngutman/34e7bdd3f233c65ed7e4.js"></script>
 
@@ -42,6 +47,13 @@ Can you guess what I did wrong?
 
 ...
 
-You guessed it right, I forgot to set my child view controller frame. One of the responsibilities of a container view controller is to resize the added sub views, after adding that missing piece of code everything started working perfectly :)
+You guessed it right, I forgot to set my child view controller frame after adding it :(. One of the responsibilities of a container view controller is to resize the added sub views, after adding that missing piece of code everything started working perfectly :)
+
+So what did I learn from this? Customization can be a pain, but the result is definitely worth it (and the zillion bugs that are created in the process).
 
 Cy’a around.
+
+Guti.
+
+[^1]: _[Apple got nice guides about this subject](https://developer.apple.com/library/ios/featuredarticles/ViewControllerPGforiPhoneOS/CreatingCustomContainerViewControllers/CreatingCustomContainerViewControllers.html#//apple_ref/doc/uid/TP40007457-CH18-SW6)_
+[^2]: _[Cool stackoverflow answer]()

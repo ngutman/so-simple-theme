@@ -56,4 +56,4 @@ Cy’a around.
 Guti.
 
 [^1]: _[Apple got nice guides about this subject](https://developer.apple.com/library/ios/featuredarticles/ViewControllerPGforiPhoneOS/CreatingCustomContainerViewControllers/CreatingCustomContainerViewControllers.html#//apple_ref/doc/uid/TP40007457-CH18-SW6)_
-[^2]: _[Cool stackoverflow answer]()
+[^2]: _[Cool stackoverflow answer](http://stackoverflow.com/questions/19038949/content-falls-beneath-navigation-bar-when-embedded-in-custom-container-view-cont)_

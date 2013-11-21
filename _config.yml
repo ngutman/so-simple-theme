@@ -1,5 +1,5 @@
-title:            Site Title
-description:      Describe your website here.
+title:            Guti's Blog
+description:      Stuff
 logo:             site-logo.png
 disqus_shortname: 
 search:           true
@@ -8,15 +8,15 @@ url:              http://localhost:4000
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Nimrod Gutman
   avatar:         bio-photo.jpg
-  email:          you@email.com
+  email:          nimrod.gutman@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
+  twitter: theguti        
   facebook:       
-  github:         
+  github: ngutman          
   stackexchange:  
-  linkedin:       
+  linkedin: theguti
   instagram:      
   flickr:         
   tumblr:         
@@ -36,14 +36,9 @@ links:
     url: /about
   - title: Articles
     url: /articles
-  - title: Theme Setup
-    url: /theme-setup
-  - title: Made Mistakes
-    url: http://mademistakes.com
-    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Jerusalem
 future:      true
 pygments:    true
 markdown:    kramdown

@@ -26,7 +26,7 @@ I won't dig into the details of how I actually created the container view and im
 <script src="https://gist.github.com/ngutman/720db18bbd559eeef251.js"></script>
 
 After I ran this code everything seems to work for a while until we started experiencing weird bugs, the view controllers we contained were UITableViewControllers and after switching between tabs the internal UITableView frame got screwed and was larger than what it was supposed to be. This caused the UITableViewController to extend below the visible screen and to “overflow” -
-                                                                               K
+
 <video width="320" height="568" controls>
   <source src="/materials/videos/overflow.mp4" type="video/mp4">
 </video>

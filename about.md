@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /about/index.html
-title: About Guti's Blog
+title: About
 modified: 2013-11-21
 image:
   feature: aboutpage.jpg

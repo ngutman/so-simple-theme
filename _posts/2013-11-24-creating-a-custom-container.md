@@ -5,7 +5,7 @@ description: "How to create a custom UIviewController container"
 category: articles
 tags: [ios, viewcontrollers]
 image:
-  feature: posts/view-controllers-like-pros/header.jpg
+  feature: posts/2013-11-24-creating-a-custom-container/header.jpg
   credit: Myself
   creditlink: http://guti.in
 comments: true
@@ -21,21 +21,27 @@ comments: true
 
 We'll begin by starting a new single-view xcode project, usually I create my views programmatically (and that's how I'll create the custom container) but for the basic structure we'll use storyboards.
 
-<a href="/images/posts/2013-11-24-creating-a-custom-container/1_new_project.png" class="fancybox" title="Creating a new project">
-<img class="center" src="/thumbs/1_new_project_320x200.png" alt="Creating a new project">
-</a>
+<div class="text-center">
+    <a href="/images/posts/2013-11-24-creating-a-custom-container/1_new_project.png" class="fancybox" title="Creating a new project">
+        <img src="/thumbs/1_new_project_320x200.png" alt="Creating a new project">
+    </a>
+</div>
 
 We'll drop a button and connect it to our generated ViewController
 
-<a href="/images/posts/2013-11-24-creating-a-custom-container/2_add_button_to_storyboard.png" class="fancybox" title="Adding a button">
-<img class="center" src="/thumbs/2_add_button_to_storyboard_320x200.png" alt="Adding a button">
-</a>
+<div class="text-center">
+    <a href="/images/posts/2013-11-24-creating-a-custom-container/2_add_button_to_storyboard.png" class="fancybox" title="Adding a button">
+        <img class="center" src="/thumbs/2_add_button_to_storyboard_320x200.png" alt="Adding a button">
+    </a>
+</div>
 
 And let's link the touch up inside event to a method
 
-<a href="/images/posts/2013-11-24-creating-a-custom-container/3_link_action.png" class="fancybox" title="Linking the action">
-<img class="center" src="/thumbs/3_link_action_320x200.png" alt="Linking the action">
-</a>
+<div class="text-center">
+    <a href="/images/posts/2013-11-24-creating-a-custom-container/3_link_action.png" class="fancybox" title="Linking the action">
+        <img class="center" src="/thumbs/3_link_action_320x200.png" alt="Linking the action">
+    </a>
+</div>
 
 Now the fun part begins, let's create a new `UIViewController` - that'll be our cool container we'll use to animate the appearance and disappearance of our child view controllers in.
 Take a look at these gists, right now we're still missing the main functionality but it can save you a couple of seconds writing.
@@ -58,9 +64,11 @@ I created a very bare UIViewController called GGViewController1 having a black b
 
 You should have something looking like this now, we're on fire!
 
-<a href="/images/posts/2013-11-24-creating-a-custom-container/4_pretty_vc.png" class="fancybox" title="Pretty view controller">
-<img class="center" src="/thumbs/4_pretty_vc_320x200.png" alt="Pretty view controller">
-</a>
+<div class="text-center">
+    <a href="/images/posts/2013-11-24-creating-a-custom-container/4_pretty_vc.png" class="fancybox" title="Pretty view controller">
+        <img class="center" src="/thumbs/4_pretty_vc_320x200.png" alt="Pretty view controller">
+    </a>
+</div>
 
 ## Let the animations begin!
 

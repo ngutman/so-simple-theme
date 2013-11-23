@@ -17,7 +17,7 @@ comments: true
 <video width="320" height="568" controls><source src="/materials/videos/2013-11-24-creating-a-custom-container/working.mp4" type="video/mp4"></video>
 </div>
 
-## Create the project structure
+## Begin with the project structure
 
 We'll begin by starting a new single-view xcode project, usually I create my views programmatically (and that's how I'll create the custom container) but for the basic structure we'll use storyboards.
 

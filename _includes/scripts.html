@@ -54,4 +54,11 @@
   })();
 </script>
 {% endif %}
+
+<script src="{{ site.url }}/assets/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox();
+    });
+</script>
 {% if site.disqus_shortname and page.comments %}{% include disqus_comments.html %}{% endif %}

@@ -14,7 +14,7 @@ comments: true
 ## So what are we going to create?
 
 <div style="text-align: center">
-<video width="320" height="568" controls><source src="" type="video/mp4"></video>
+<video width="320" height="568" controls><source src="/materials/videos/2014-01-17-creating-tinder-like-animations/almost_done.mp4" type="video/mp4"></video>
 </div>
 
 ## Creating the draggable view

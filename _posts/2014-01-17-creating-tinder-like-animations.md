@@ -1,13 +1,9 @@
 ---
 layout: post
-title: Creating a cool Tinder like drag animations
+title: IOS - Creating a cool Tinder like drag animations
 description: "How to create a cool Tinder like drag animation for your views"
 category: articles
 tags: [ios, animations]
-image:
-  feature: posts/2014-01-17-creating-tinder-like-animations/header.jpg
-  credit: Myself
-  creditlink: http://guti.in
 comments: true
 ---
 
@@ -21,7 +17,7 @@ comments: true
 
 I'm going to skip all the boring project-structure-creation steps, just make sure you have a clean UIViewController you can work with.
 Let's create a new custom view, it'll be our draggable view, I named it `GGDraggableView`. We'll need to add it to our view and set its size. (`GGView` is the view of our main ViewController).
-I spiced the view a bit and added a UIImageView to it with a pretty image of Bar Refaeli (find your own image)
+I spiced the view a bit and added a UIImageView to it with a pretty image of Bar Refaeli (find your own one)
 
 <script src="https://gist.github.com/ngutman/8481990.js"></script>
 

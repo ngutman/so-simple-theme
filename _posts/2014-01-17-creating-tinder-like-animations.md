@@ -46,8 +46,8 @@ Here's the flow I came up with to get pretty close results -
 * Save the original position of the view when the pan gesture starts (so we can change it or 'snap' back to it)
 * Find the gesture strength `CGFloat rotationStrength = MIN(xDistance / 320, 1);`
 * Calculate the pan gesture 'strength' and calculate the rotation + scale changes
-    * The rotation angel is in radians, 2π radians is 360° and we'd want a more subtle rotation, I went for 22.5° (1/16 of a full rotation)
-    * `CGFloat rotationAngel = (CGFloat) (2*M_PI * rotationStrength / 16);`
+    * The rotation angle is in radians, 2π radians is 360° and we'd want a more subtle rotation, I went for 22.5° (1/16 of a full rotation)
+    * `CGFloat rotationAngle = (CGFloat) (2*M_PI * rotationStrength / 16);`
     * The scale will start at 1.0x and go down to 0.93x, so we need to "invert" the force when calculating it -
     * `CGFloat scaleStrength = 1 - fabsf(rotationStrength) / 2;`
     * `CGFloat scale = MAX(scaleStrength, 0.93);`

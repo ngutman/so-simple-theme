@@ -34,6 +34,7 @@ I'm available for any questions or remarks on the materials written here, don't 
     * [SB-700 AF Speedlight](http://www.nikonusa.com/en/Nikon-Products/Product/Flashes/4808/SB-700-AF-Speedlight.html)
 
 ## Public GPG Key
+<code>
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
 Comment: GPGTools - https://gpgtools.org
@@ -87,4 +88,4 @@ LLTiswIYni5jv0aOUFnt/DZURUZRUPYqUhU3PhqneT2AhUg0FgQKoQOuHeYvtcoZ
 pj7cmfU=
 =Z4Nd
 -----END PGP PUBLIC KEY BLOCK-----
-
+</code>

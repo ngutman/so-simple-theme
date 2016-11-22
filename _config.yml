@@ -5,6 +5,7 @@ disqus_shortname: ngutman
 search:           true
 #Change url to your domain. Leave localhost server or blank when working locally.
 url:              http://guti.in
+baseurl: ""
 
 # Owner/author information
 owner:
